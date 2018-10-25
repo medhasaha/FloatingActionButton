@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sonali.floatingactionbtn.MainActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab1"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="33dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/ic_my_location"
+        app:rippleColor="@color/fab_color"
+        app:borderWidth="0dp"
+        android:elevation="6dp"
+        android:backgroundTint="@color/fab_color"
+        app:fabSize="normal"
+        android:background="@color/fab_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout"
+        tools:layout_editor_absoluteY="4dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:layout_alignLeft="@+id/fab2"
+            android:layout_alignStart="@+id/fab2"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="20dp"
+            android:background="@color/fab_color"
+            android:backgroundTint="@color/fab_color"
+            android:elevation="6dp"
+            android:src="@drawable/ic_place"
+            android:visibility="invisible"
+            app:borderWidth="0dp"
+            app:fabSize="mini"
+            app:rippleColor="@color/fab_color" />
+
+        <TextView
+            android:id="@+id/TextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:layout_marginBottom="62dp"
+           android:layout_marginLeft="170dp"
+            android:backgroundTint="@color/fab_color"
+            android:text="  My Location  "
+            android:textSize="17dp"
+            android:visibility="invisible"
+            android:textColor="#FFFFFF"
+            android:background="@color/fab_color"/>
+
+        <TextView
+            android:id="@+id/TextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="115dp"
+            android:background="@color/fab_color"
+            android:backgroundTint="@color/fab_color"
+            android:text=" Add to Favourite "
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/TextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="310dp"
+          android:layout_marginLeft="190dp"
+            android:backgroundTint="@color/fab_color"
+            android:text="  Navigate  "
+            android:textSize="17dp"
+            android:visibility="invisible"
+            android:textColor="#FFFFFF"
+            android:background="@color/fab_color"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginLeft="42dp"
+            android:layout_marginStart="42dp"
+            android:layout_toEndOf="@+id/TextView3"
+            android:layout_toRightOf="@+id/TextView3"
+            android:background="@color/fab_color"
+            android:backgroundTint="@color/fab_color"
+            android:elevation="6dp"
+            android:src="@drawable/ic_navigation"
+            android:visibility="invisible"
+            app:borderWidth="0dp"
+            app:fabSize="mini"
+            app:rippleColor="@color/fab_color" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/TextView3"
+            android:layout_alignLeft="@+id/fab2"
+            android:layout_alignStart="@+id/fab2"
+            android:layout_gravity="bottom|end"
+            android:background="@color/fab_color"
+            android:backgroundTint="@color/fab_color"
+            android:elevation="6dp"
+            android:src="@drawable/ic_favorite"
+            android:visibility="invisible"
+            app:borderWidth="0dp"
+            app:fabSize="mini"
+            app:rippleColor="@color/fab_color" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
